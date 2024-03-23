@@ -1,5 +1,5 @@
-import ProductList from './ProductList';
-import ProductEdit from './ProductEdit';
-import ProductCreate from './ProductCreate';
+import ProductCreate from "./ProductCreate";
+import ProductEdit from "./ProductEdit";
+import ProductList from "./ProductList";
 
-export {ProductList, ProductEdit, ProductCreate}
+export { ProductCreate, ProductEdit, ProductList };

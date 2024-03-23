@@ -3,26 +3,25 @@ import { Link } from 'react-router-dom'
 import { IoIosAdd } from "react-icons/io";
 import { BiEdit } from "react-icons/bi";
 import { FaTrashAlt } from "react-icons/fa";
-import ProductServices from '../../../services/ProductServices';
+import BrandServices from '../../../services/BrandServices';
 
-const ProductList = () => {
-    const [products, setProducts] = useState([]);
+const BrandList = () => {
+    const [brand, setBrand] = useState([]);
     useEffect(() => {
         (async() =>{
-            const result = await ProductServices.get_list();
-            setProducts(result.products);
+            const result = await BrandServices.get_list();
+            setBrand(result.brand);
         })();
     },[]);
-
     return (
         <div className='card'>
             <div className='card-header'>
                 <div className='row'>
                     <div className='col-6'>
-                        <strong>Tất cả sản phẩm</strong>
+                        <strong>Tất cả thương hiệu</strong>
                     </div>
                     <div className='col-6 text-end'>
-                        <Link to="/admin/product/create" className='btn btn-sm btn-success'><IoIosAdd className='fs-3' />Thêm sản phẩm</Link>
+                        <Link to="/admin/brand/create" className='btn btn-sm btn-success'><IoIosAdd className='fs-3' />Thêm thương hiệu</Link>
                     </div>
                 </div>
             </div>
@@ -39,8 +38,8 @@ const ProductList = () => {
                         </tr>
                     </thead>
                     <tbody>
-                    {products && products.length > 0 ? (
-                            products.map((item, index) => (
+                    {brand && brand.length > 0 ? (
+                            brand.map((item, index) => (
                                 <tr key={index}>
                                     <td>{index + 1}</td>
                                     <td><img width={100} src={item.image} alt={item.name} /></td>
@@ -65,4 +64,4 @@ const ProductList = () => {
     )
 }
 
-export default ProductList
+export default BrandList

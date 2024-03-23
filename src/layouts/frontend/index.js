@@ -1,16 +1,16 @@
-import Footer from './Footer';
-import Header from './Header';
-import { Outlet } from 'react-router-dom';
-// import Home from './../../pages/frontend/Home/index';
+import Footer from "./Footer.js";
+import Header from "./Header";
+import Home from "../../pages/frontend/Home";
 
-const FrontendLayout = () => {
-    return ( 
+const LayoutFrontend = () => {
+  return (
     <>
-    <Header />
-    <Outlet/>
-    <Footer />
+    <Header/>
+    <Home/>
+    <Footer/>
     </>
-     );
-}
- 
-export default FrontendLayout;
+    
+  );
+};
+
+export default LayoutFrontend;

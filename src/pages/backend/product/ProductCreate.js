@@ -1,5 +1,9 @@
+import React from 'react'
+
 const ProductCreate = () => {
-    return ( <h1>ProductCreate</h1> );
+    return (
+        <div>ProductCreate</div>
+    )
 }
- 
-export default ProductCreate;
+
+export default ProductCreate
