@@ -1,67 +1,152 @@
-import React from 'react'
-import { FaSave } from "react-icons/fa";
-import { FaArrowLeft } from "react-icons/fa6";
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
+import { FaArrowLeft, FaSave } from "react-icons/fa";
 const PostCreate = () => {
-    return (
-        <div style={{ backgroundColor: "#f2f2f2" }}>
-            <h3 className='py-3'>Thêm bài viết</h3>
-            <div className='text-end pe-4'>
-                <Link to="/admin/post" className='btn btn-primary'><FaArrowLeft className='fs-5 me-2 pb-1' />Về danh sách</Link>
+  const [data, setData] = useState({
+    title: "",
+    detail: "",
+    description: "",
+    topic_id: 1,
+    img: "",
+    status: "1",
+  });
+  const handleChange = (event) => {
+    const name = event.target.name;
+    const value = event.target.value;
+    setData((values) => ({ ...values, [name]: value }));
+  };
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    console.log(data);
+    setData({
+      title: "",
+      detail: "",
+      description: "",
+      topic_id: 1,
+      img: "",
+      status: "1",
+    });
+  };
+  return (
+    <form onSubmit={handleSubmit}>
+      <div className="card">
+        <div className="card-header">
+          <div className="row">
+            <div className="col-6">
+              <strong className="fs-4">Thêm bài viết</strong>
             </div>
-            <div className='row py-3'>
-                <div className='col-md-9'>
-                    <div className="mb-3">
-                        <p ><b>Tiêu đề bài viết (*)</b></p>
-                        <input type="text" className="form-control" placeholder="Nhập tiêu đề" />
-                    </div>
-                    <div className="mb-3">
-                        <p ><b>Chi tiết (*)</b></p>
-                        <textarea rows={7} type="text" className="form-control" placeholder="Nhập chi tiết" />
-                    </div>
-                    <div className="mb-3">
-                        <p ><b>Mô tả (*)</b></p>
-                        <textarea rows={4} type="text" className="form-control" placeholder="Mô tả" />
-                    </div>
+            <div className="col-6 text-end">
+              <Link
+                to="/admin/post"
+                className="btn btn-sm btn-info text-white me-2"
+              >
+                <FaArrowLeft className="me-1" />
+                Về danh sách
+              </Link>
 
-                </div>
-                <div className='col-md-3 pe-5'>
-                    <div className='row bg-white'>
-                        <p className='py-1 m-0' style={{ borderBottom: "2px solid #f2f2f2" }}><b>Đăng</b></p>
-                        <div className='py-2' style={{ borderBottom: "2px solid #f2f2f2" }}>
-                            <p className='py-2 m-0'>Chọn trạng thái đăng</p>
-                            <select class="form-select" aria-label="Default select example" >
-                                <option selected>Xuất bản</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                        <div className='text-end py-2'><button className='btn btn-success'><FaSave className='fs-5 me-2 pb-1' />Đăng</button></div>
-                    </div>
-                    <div className='row bg-white mt-3'>
-                        <p className='py-1 m-0' style={{ borderBottom: "2px solid #f2f2f2" }}><b>Chủ đề (*)</b></p>
-                        <div className='py-2' style={{ borderBottom: "2px solid #f2f2f2" }}>
-                            <select class="form-select" aria-label="Default select example" >
-                                <option selected>None</option>
-                                <option value="1">One</option>
-                                <option value="2">Two</option>
-                                <option value="3">Three</option>
-                            </select>
-                        </div>
-                    </div>
-                    <div className='row bg-white mt-3'>
-                        <p className='py-1 m-0' style={{ borderBottom: "1px solid #f2f2f2" }}><b>Hình đại diện</b></p>
-                        <div className='py-2'>
-                            <input type="file" class="form-control" />
-                        </div>
-
-                    </div>
-                </div>
+              <button type="submit" className="btn btn-sm btn-success">
+                <FaSave className="me-1" />
+                Lưu
+              </button>
             </div>
-
+          </div>
         </div>
-    )
-}
+        <div className="card-body">
+          <div className="row">
+            <div className="col-md-9">
+              <div className="mb-3">
+                <label htmlFor="inputTitle" className="form-label">
+                  <strong>Tiêu đề bài viết (*)</strong>
+                </label>
+                <input
+                  type="text"
+                  className="form-control"
+                  id="inputTitle"
+                  name="title"
+                  value={data.title || ""}
+                  onChange={handleChange}
+                  placeholder="Nhập tiêu đề"
+                  required
+                />
+              </div>
+              <div className="mb-3">
+                <label htmlFor="inputDetail" className="form-label">
+                  <strong>Chi tiết (*)</strong>
+                </label>
+                <textarea
+                  rows={6}
+                  id="inputDetail"
+                  className="form-control"
+                  name="detail"
+                  value={data.detail || ""}
+                  onChange={handleChange}
+                  placeholder="Nhập chi tiết sản phẩm"
+                  required
+                ></textarea>
+              </div>
+              <div className="mb-3">
+                <label htmlFor="inputDes" className="form-label">
+                  <strong>Mô tả (*)</strong>
+                </label>
+                <textarea
+                  rows={3}
+                  id="inputDes"
+                  name="description"
+                  value={data.description || ""}
+                  onChange={handleChange}
+                  className="form-control"
+                  placeholder="Nhập mô tả"
+                  required
+                  ></textarea>
+              </div>
+            </div>
+            <div className="col-md-3">
+              <div className="mb-3">
+                <label className="form-label">
+                  <strong>Chủ đề (*)</strong>
+                </label>
+                <select
+                  className="form-select"
+                  name="topic_id"
+                  value={data.topic_id || 1}
+                  onChange={handleChange}
+                >
+                  <option value="0">None</option>
+                </select>
+              </div>
+              <div className="mb-3">
+                <label htmlFor="selectImg" className="form-label">
+                  <strong>Hình ảnh đại diện (*)</strong>
+                </label>
+                <input
+                  type="file"
+                  name="img"
+                  value={data.img || ""}
+                  onChange={handleChange}
+                  className="form-control"
+                  id="selectImg"
+                />
+              </div>
+              <div className="mb-3">
+                <label className="form-label">
+                  <strong>Trạng thái</strong>
+                </label>
+                <select
+                  className="form-select"
+                  name="status"
+                  value={data.status}
+                  onChange={handleChange}
+                >
+                  <option value="1">Xuất bản</option>
+                  <option value="2">Chưa xuất bản</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </form>
+  );
+};
 
-export default PostCreate
+export default PostCreate;

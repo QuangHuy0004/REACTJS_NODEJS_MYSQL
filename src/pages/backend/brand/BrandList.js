@@ -13,15 +13,16 @@ const BrandList = () => {
             setBrand(result.brand);
         })();
     },[]);
+
     return (
         <div className='card'>
             <div className='card-header'>
                 <div className='row'>
                     <div className='col-6'>
-                        <strong>Tất cả thương hiệu</strong>
+                        <strong>Tất cả sản phẩm</strong>
                     </div>
                     <div className='col-6 text-end'>
-                        <Link to="/admin/brand/create" className='btn btn-sm btn-success'><IoIosAdd className='fs-3' />Thêm thương hiệu</Link>
+                        <Link to="/admin/product/create" className='btn btn-sm btn-success'><IoIosAdd className='fs-3' />Thêm sản phẩm</Link>
                     </div>
                 </div>
             </div>
@@ -30,10 +31,11 @@ const BrandList = () => {
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Hình</th>
-                            <th>Tên</th>
-                            <th>Danh mục</th>
-                            <th>Thương hiệu</th>
+                            <th>ID</th>
+                            <th>Name</th>
+                            <th>Slug</th>
+                            <th>Hình ảnh</th>
+                            <th>Trạng thái</th>
                             <th>Chức năng</th>
                         </tr>
                     </thead>
@@ -42,10 +44,11 @@ const BrandList = () => {
                             brand.map((item, index) => (
                                 <tr key={index}>
                                     <td>{index + 1}</td>
-                                    <td><img width={100} src={item.image} alt={item.name} /></td>
+                                    <td>{item.id}</td>
                                     <td>{item.name}</td>
-                                    <td>{item.category_id}</td>
-                                    <td>{item.brand_id}</td>
+                                    <td>{item.slug}</td>
+                                    <td>    <img width={100} src={item.image} alt={item.name} />    </td>
+                                    <td>{item.status}</td>
                                     <td>
                                         <BiEdit className='fs-3 me-2' style={{ color: "orange", cursor: "pointer" }} />
                                         <FaTrashAlt className='fs-4' style={{ color: "red", cursor: "pointer" }} />

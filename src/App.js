@@ -3,7 +3,6 @@ import FrontendLayout from './layouts/frontend';
 import BackendLayout from './layouts/backend';
 import AppRouter from './router';
 
-
 function App() {
   return (
     <BrowserRouter>

@@ -43,7 +43,7 @@ const ProductList = () => {
                             products.map((item, index) => (
                                 <tr key={index}>
                                     <td>{index + 1}</td>
-                                    <td><img width={100} src={item.image} alt={item.name} /></td>
+                                    <td>    <img width={100} src={item.image} alt={item.name} />    </td>
                                     <td>{item.name}</td>
                                     <td>{item.category_id}</td>
                                     <td>{item.brand_id}</td>

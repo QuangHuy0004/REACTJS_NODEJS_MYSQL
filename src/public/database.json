@@ -1,166 +1,70 @@
 {
-    "vouchers": [
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_1.jpg?1706431926539",
-        "title1": "TẶNG BẠN MỚI",
-        "title2": "Giảm 15% cho đơn hàng đầu tiên từ 699K",
-        "code": "HELLO"
-      },
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_2.jpg?1706431926539",
-        "title1": "MIỄN PHÍ VẬN CHUYỂN",
-        "title2": "Giảm 15% cho đơn hàng đầu tiên từ 699K",
-        "code": "FREESHIP"
-      },
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_3.jpg?1706431926539",
-        "title1": "GIẢM 50K",
-        "title2": "Giảm 15% cho đơn hàng đầu tiên từ 699K",
-        "code": "SUDES50K"
-      },
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_4.jpg?1706431926539",
-        "title1": "TẶNG VOUCHER 50%",
-        "title2": "Giảm 15% cho đơn hàng đầu tiên từ 699K",
-        "code": "SUDES50"
-      }
-    ],
-    "Blogs": 
-    [
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/articles/phoi-do-voi-form-relax-chuan-men.png?v=1693032957567",
-        "title": "PHỐI ĐỒ VỚI QUẦN RELAX CHUẨN MEN DÀNH CHO NAM",
-        "des": "Tuy nhiên, form relax được biết đến là một form quần rộng rãi với phần ống rộng nên có rất nhiều chàng trai không biết phải phối đồ cùng form quần này như thế nào để không bị xuề xòa, luộm thuộm. Nhưng không cần lo lắng..."
+  "products": [
+    {
+      "id": 1,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "category_id": 2,
+      "brand_id": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
     },
     {
-        "img": "https://bizweb.dktcdn.net/100/491/897/articles/quan-kaki-nu-thumb.png?v=1693032395680",
-        "title": "GỢI Ý 5 KIỂU QUẦN KAKI NỮ TRẺ TRUNG ĐƯỢC GIỚI TRẺ LĂNG XÊ",
-        "des": "quần kaki nữ là một trong những item thoải mái, năng động 'must have' trong tủ đồ các nàng, phù hợp với cả cô nàng công sở đến phong cách thời trang hằng ngày. Quần kaki không chỉ sở hữu thiết kế, form dáng đa dạng..."
+      "id": 2,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "category_id": 2,
+      "brand_id": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
     },
     {
-        "img": "https://bizweb.dktcdn.net/100/491/897/articles/sportswear-la-gi-chat-lieu-lam-n.png?v=1693032295757",
-        "title": "SPORTSWEAR LÀ GÌ? CHẤT LIỆU LÀM NÊN NHỮNG BỘ SPORTSWEAR CAO CẤP",
-        "des": "Nếu đã là một người đam mê thể thao, thích vận động chắc hẳn bạn sẽ không thể nào bỏ qua những trang phục thời trang phổ biến như sportswear. Sportswear luôn mang lại cho người mặc sự thoải mái..."
+      "id": 3,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "category_id": 2,
+      "brand_id": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
+    },
+    {
+      "id": 4,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "category_id": 2,
+      "brand_id": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
+    },
+    {
+      "id": 5,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "category_id": 2,
+      "brand_id": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
+    },
+    {
+      "id": 6,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "category_id": 2,
+      "brand_id": 1,
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
     }
-    ],
-    "services": [
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_1.png?1706431926539",
-        "title": "Miễn phí đơn hàng vận chuyển",
-        "des": "Cho đơn hàng từ 500k"
-      },
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_2.png?1706431926539",
-        "title": "Đổi hàng tận nhà",
-        "des": "Trong vòng 7 ngày"
-      },
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_3.png?1706431926539",
-        "title": "Thanh toán COD",
-        "des": "Hoặc thanh toán quét mã qr"
-      },
-      {
-        "img": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_4.png?1706431926539",
-        "title": "Hotline: 0961931401",
-        "des": "Hỗ trợ từ 08h00 đến 22h00"
-      }
-    ],
-    "items": [
-      "Áo Thun",
-      "Quần Short",
-      "Quần Kaki & Chino",
-      "Mắt Kính",
-      "Áo Nỉ Và Len",
-      "Áo Khoác",
-      "Áo Sơmi",
-      "Áo Polo",
-      "Hoodie",
-      "Tank Top - Áo Ba Lỗ",
-      "Quần Jogger"
-    ],
-    "products": [
-      {
-        "img": "//bizweb.dktcdn.net/thumb/large/100/491/897/products/ao-thun-nam-10s23tss034-bright-w.png?v=1693028874207",
-        "title": "Áo Thun Nam Ngắn In Hình Form Regular",
-        "price": "650.000đ",
-        "sale": "21",
-        "line": "22%",
-        "danhmuc": "quan ao",
-        "brand": "vietnam"
-      },
-      {
-        "img": "//bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23shl036-beige-1-1.png?v=1692629224440",
-        "title": "Áo Sơ Mi Nữ Form Tay Dài Đẹp Cổ V",
-        "price": "360.000đ",
-        "sale": "514",
-        "line": "84%",
-        "danhmuc": "quan ao",
-        "brand": "vietnam"
-
-      },
-      {
-        "img": "//bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23shl035-navy-white-ao-so-mi.png?v=1692629642783",
-        "title": "Áo Sơ Mi Nam Tay Dài Cổ V Túi Đắp Trơn",
-        "price": "290.000đ",
-        "sale": "54",
-        "line": "57%",
-        "danhmuc": "quan ao",
-        "brand": "vietnam"
-
-      },
-      {
-        "img": "//bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23dpa025-m-blue-quan-jean-nam-1-2.jpg?v=1692767005130",
-        "title": "Quần Jean Nam Trơn Form Wide Leg",
-        "price": "250.000đ",
-        "sale": "41",
-        "line": "43%",
-        "danhmuc": "quan ao",
-        "brand": "vietnam"
-
-      },
-      {
-        "img": "//bizweb.dktcdn.net/thumb/large/100/491/897/products/10f22dps001-cream-quan-short-nam-1.png?v=1692885690987",
-        "title": "Quần Jean Nam Trơn Form Wide Leg",
-        "price": "250.000đ",
-        "sale": "12",
-        "line": "19%",
-        "danhmuc": "quan ao",
-        "brand": "vietnam"
-
-      }
-    ],
-    "itemImages": [
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_1.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_2.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_3.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_4.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_5.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_6.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_7.png?1706431926539" },
-      { "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_8.png?1706431926539" }
-    ],
-    "categories": [
-      {
-        "bg_image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/background_danhmuc_1.jpg?1706431926539",
-        "title1": "Sản Phẩm",
-        "title2": "Áo thời trang",
-        "link": "/ao-thun",
-        "image": "//bizweb.dktcdn.net/100/491/897/themes/915864/assets/danhmuc_1.jpg?1706431926539"
-      },
-      {
-        "bg_image": "//bizweb.dktcdn.net/100/491/897/themes/915864/assets/background_danhmuc_2.jpg?1706431926539",
-        "title1": "Sản Phẩm",
-        "title2": "Quần thời trang",
-        "link": "/quan",
-        "image": "//bizweb.dktcdn.net/100/491/897/themes/915864/assets/danhmuc_2.jpg?1706431926539"
-      },
-      {
-        "bg_image": "//bizweb.dktcdn.net/100/491/897/themes/915864/assets/background_danhmuc_3.jpg?1706431926539",
-        "title1": "Sản Phẩm",
-        "title2": "Giày và Phụ Kiện",
-        "link": "/phu-kien",
-        "image": "//bizweb.dktcdn.net/100/491/897/themes/915864/assets/danhmuc_3.jpg?1706431926539"
-      }
-    ]
-  }
-  
+  ],
+  "brands": [
+    {
+      "id": 1,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "parent_id": 1,
+      "slug": "quan-short-nam-phoi-day-rut-hoa-tiet-in-form-relax",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
+    }
+  ],
+  "category": [
+    {
+      "id": 1,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "slug": "quan-short-nam-phoi-day-rut-hoa-tiet-in-form-relax",
+      "image": "https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977"
+    }
+  ],
+  "topics": [
+    {
+      "id": 1,
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "slug": "quan-short-nam-phoi-day-rut-hoa-tiet-in-form-relax"
+    }
+  ]
+}

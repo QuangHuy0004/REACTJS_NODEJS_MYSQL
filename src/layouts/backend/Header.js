@@ -4,29 +4,34 @@ const Header = () => {
         <div className="container-fluid">
             <nav className="navbar navbar-expand-lg bg-body-tertiary"  >
                 <div className="container-fluid">
-                    <Link className="navbar-brand" to="#">Admin</Link>
+                    <Link className="navbar-brand" to="/admin">Admin</Link>
                     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
                         <ul className="navbar-nav me-auto mb-2 mb-lg-0">
                             <li className="nav-item">
-                                <Link className="nav-link" to="/admin/order">Đơn hàng</Link>
+                                <Link className="nav-link" to="/admin/banner">Banner</Link>
                             </li>
                             <li className="nav-item">
-                                <Link className="nav-link" to="/admin/customer">Khách hàng</Link>
+                                <Link className="nav-link" to="/admin/topic">Chủ đề</Link>
+                            </li> <li className="nav-item">
+                                <Link className="nav-link" to="/admin/post">Bài viết</Link>
                             </li>
                             <li className="nav-item">
+                                <Link className="nav-link" to="/admin/user">Khách hàng</Link>
+                            </li>
+                            {/* <li className="nav-item">
                                 <Link className="nav-link" to="/admin/contact">Liên hệ</Link>
-                            </li>
+                            </li> */}
                             <li className="nav-item dropdown">
                                 <Link className="nav-link dropdown-toggle" to="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                                     Sản Phẩm
                                 </Link>
                                 <ul className="dropdown-menu">
                                     <li><Link className="dropdown-item" to="/admin/product">Tất cả sản phẩm </Link></li>
-                                    <li><Link className="dropdown-item" to="/admin/category/list">Danh mục sản phẩm</Link></li>
-                                    <li><Link className="dropdown-item" to="/admin/brand/list">Thương hiệu</Link></li>
+                                    <li><Link className="dropdown-item" to="/admin/category">Danh mục sản phẩm</Link></li>
+                                    <li><Link className="dropdown-item" to="/admin/brand">Thương hiệu</Link></li>
                                 </ul>
                             </li>
                             <li className="nav-item dropdown">
