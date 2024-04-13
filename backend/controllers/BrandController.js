@@ -1,4 +1,5 @@
 const Brand = require('../modules/Brand');
+
 const BrandController = {    
     index: (req, res) => {
         Brand.getAll((data) => {

@@ -1,15 +1,15 @@
 const conn = require('../configs/dbmysql');
-const Category = {
+const Brand = {
     getAll: (result) => {
-        conn.query("SELECT * FROM db_brand", function (err, category) {
+        conn.query("SELECT * FROM db_brand", function (err, brand) {
             if (err) {
                 result(null);
             }
             else {
-                result(category);
+                result(brand);
             }
         });
     }
 }
 
-module.exports = Category;
+module.exports = Brand;
