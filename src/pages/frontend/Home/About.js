@@ -1,9 +1,8 @@
-import Preloader from "./Preloader";
+import './Style.css'; 
 
 const About = () => {
     return (<>
        
-       <Preloader />
         <section className="breadcrumb-option">
             <div className="container">
                 <div className="row">

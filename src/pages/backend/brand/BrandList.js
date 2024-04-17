@@ -21,9 +21,6 @@ const BrandList = () => {
                     <div className='col-6'>
                         <strong>Tất cả sản phẩm</strong>
                     </div>
-                    <div className='col-6 text-end'>
-                        <Link to="/admin/product/create" className='btn btn-sm btn-success'><IoIosAdd className='fs-3' />Thêm sản phẩm</Link>
-                    </div>
                 </div>
             </div>
             <div className='card-body'>

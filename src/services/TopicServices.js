@@ -1,4 +1,4 @@
-import httpAxios from "../router/httpAxios";
+import httpAxios from "../httpAxios";
 
 const TopicServices = {
     get_list:()=>{

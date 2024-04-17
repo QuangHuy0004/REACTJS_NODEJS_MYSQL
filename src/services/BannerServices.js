@@ -1,8 +1,13 @@
-import httpAxios from "../router/httpAxios";
+import httpAxios from "../httpAxios";
 
-const BannerServices = {
-    get_list:()=>{
-        return httpAxios.get('/banner/index');
-    }
-}
-export default BannerServices;
+
+const BannerService = {
+  get_list: () => {
+    return httpAxios.get( "banner/index");
+  },
+
+  slideshow: async (position) => {
+    return await httpAxios.get( `banner/list/${position}`);
+  }
+};
+export default BannerService;

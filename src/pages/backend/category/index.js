@@ -1,4 +1,4 @@
-import CategoryCreate from './CategoryCreate';
-import CategorysList from './CategorysList';
+import Category from './Category';
+import CategoryList from './CategoryList';
 
-export {CategoryCreate , CategorysList};
+export {CategoryList , Category};

@@ -1,12 +1,7 @@
-import Preloader from "./Preloader";
+import './Style.css'; // Import CSS file
 
 const ShopDetail = () => {
     return ( <>
-       
-        {/* Page Preloder */}
-        <Preloader />
-
-      
         <section className="shop-details">
           <div className="product__details__pic">
             <div className="container">

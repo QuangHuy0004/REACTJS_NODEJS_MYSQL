@@ -1,4 +1,4 @@
-import httpAxios from "../router/httpAxios";
+import httpAxios from "../httpAxios";
 
 const UserServices = {
     get_list:()=>{

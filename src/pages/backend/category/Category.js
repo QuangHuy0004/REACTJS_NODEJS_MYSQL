@@ -1,45 +1,133 @@
-import React, { useState } from "react";
-import Data from "../../../public/database.json";
-import { FaSave } from "react-icons/fa";
-import { Link } from "react-router-dom";
-import { IoIosAdd } from "react-icons/io";
+import React, { useEffect, useState } from "react";
+import CategoryService from "../../../services/CategoryService";
 
-const BrandCreate = () => {
-  const brands = Data.brands;
+import { ImgUrl } from "../../../basePath/Url";
+import { FaEdit, FaSave } from "react-icons/fa";
+import { MdDelete } from "react-icons/md";
+
+const Category = () => {
+  const [load, setLoad] = useState(1);
+  const [category, setCategory] = useState([]);
+  const [editId, setEditId] = useState(null);
   const [data, setData] = useState({
     name: "",
+    parent_id: 0,
     description: "",
-    parent_id: 1,
-    img: "",
     status: 1,
   });
-  const handleChange = (event) => {
-    const name = event.target.name;
-    const value = event.target.value;
-    setData((values) => ({ ...values, [name]: value }));
+
+  const handleXoa = async (id) => {
+    const result = await CategoryService.delete(id);
+    if (result.status) {
+      setLoad(load + 1);
+      alert(result.message);
+    }
   };
+
+  useEffect(() => {
+    (async () => {
+      const result = await CategoryService.get_list();
+      setCategory(result.categorys);
+    })();
+  }, [load]);
   const handleSubmit = (event) => {
-    event.preventDefault();
-    console.log(data);
-    setData({
-      name: "",
-      description: "",
-      parent_id: 1,
-      img: "",
-      status: 1,
-    });
+    // event.preventDefault();
+    const image = document.querySelector("#image");
+    const category = new FormData();
+    category.append("name", data.name);
+    category.append("parent_id", data.parent_id);
+    category.append("sort_order", data.sort_order);
+    category.append("description", data.description);
+    category.append("status", data.status);
+    category.append("image", image.files.length === 0 ? null : image.files[0]);
+    console.log(category);
+    //Service them
+    const a = async () => {
+      const result = await CategoryService.store(category);
+      console.log(result);
+      if (result.status == true) {
+        alert(result.message);
+        setData({
+          name: "",
+          parent_id: 0,
+          id: "",
+          sort_order: 0,
+          description: "",
+          status: 1,
+        });
+        image.value = null;
+        setLoad(load + 1);
+      } else {
+        alert(result.message);
+      }
+    };
+    a();
   };
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setData((prevData) => ({ ...prevData, [name]: value }));
+  };
+
+  const handleSave = async () => {
+    const image = document.querySelector("#image");
+    const categoryData = new FormData();
+    categoryData.append("name", data.name);
+    categoryData.append("parent_id", data.parent_id);
+    categoryData.append("id", data.id );
+    categoryData.append("slug", data.slug);
+    categoryData.append("description", data.description);
+    categoryData.append("status", data.status);
+    categoryData.append(
+      "image",
+      image.files.length === 0 ? null : image.files[0]
+    );
+
+    if (editId) {
+      const result = await CategoryService.update(editId, categoryData);
+      if (result.status) {
+        alert(result.message);
+        setEditId(null);
+        setLoad((prevLoad) => prevLoad + 1);
+      } else {
+        alert(result.message);
+      }
+    } else {
+      const result = await CategoryService.store(categoryData);
+      if (result.status) {
+        alert(result.message);
+        setData({
+          name: "",
+          parent_id: 0,
+          description: "",
+          status: 1,
+        });
+        image.value = null;
+        setLoad((prevLoad) => prevLoad + 1);
+      } else {
+        alert(result.message);
+      }
+    }
+  };
+
+  const handleEdit = async (id) => {
+    setEditId(id);
+    const editCategory = category.find((cat) => cat.id === id);
+    if (editCategory) {
+      setData({
+        name: editCategory.name,
+        id: editCategory.id,
+        description: editCategory.description,
+        status: editCategory.status,
+      });
+    }
+  };
+
   return (
     <div className="card">
       <div className="card-header">
         <div className="row">
           <div className="col-6">
-            <strong className="fs-4">Thương hiệu</strong>
-          </div>
-          <div className="col-6 text-end">
-            <Link to="/admin/brand/list" className="btn btn-sm btn-success">
-              Tất cả Thương Hiệu 
-            </Link>
+            <strong className="fs-4">Danh mục sản phẩm</strong>
           </div>
         </div>
       </div>
@@ -48,7 +136,7 @@ const BrandCreate = () => {
           <div className="col-md-4">
             <div className="mb-3">
               <label htmlFor="inputName" className="form-label">
-                <strong>Tên thương hiệu (*)</strong>
+                <strong>Tên danh mục (*)</strong>
               </label>
               <input
                 type="text"
@@ -113,8 +201,8 @@ const BrandCreate = () => {
           <div className="col-md-8">
             <div className="row">
               <div className="col-md-8 mt-2">
-                <marquee className="px-1 ">
-                  <h4>Tất cả thương hiệu !</h4>
+                <marquee className="px-1 " >
+                  <h4>Tất cả danh mục sản phẩm !</h4>
                 </marquee>
               </div>
               <div className="col-md-4 text-end pb-2">
@@ -148,7 +236,7 @@ const BrandCreate = () => {
                 </tr>
               </thead>
               <tbody>
-                {/* {category.map((cat, index) => (
+                {category.map((cat, index) => (
                   <tr key={cat.id}>
                     <th scope="row" className="text-center">
                       {index}
@@ -188,7 +276,7 @@ const BrandCreate = () => {
                       </button>
                     </th>
                   </tr>
-                ))} */}
+                ))}
               </tbody>
             </table>
           </div>
@@ -198,4 +286,4 @@ const BrandCreate = () => {
   );
 };
 
-export default BrandCreate;
+export default Category;

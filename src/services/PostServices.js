@@ -1,8 +1,8 @@
-import httpAxios from "../router/httpAxios";
+import httpAxios from "../httpAxios";
 
-const PostServices = {
-    get_list:()=>{
-        return httpAxios.get('/post/index');
-    }
-}
-export default PostServices;
+const ProductService = {
+  get_list: async () => {
+    return await httpAxios.get("post/index");
+  },
+};
+export default ProductService;

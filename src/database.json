@@ -1,0 +1,242 @@
+{
+  "slides": [
+    {
+      "title": "slide 1",
+      "image": "img/hero/hero-1.jpg"
+    },
+    {
+      "title": "slide 2",
+      "image": "img/hero/hero-2.jpg"
+    },
+    {
+      "title": "slide 3",
+      "image": "img/hero/hero-1.jpg"
+    },
+    {
+      "title": "slide 4",
+      "image": "img/hero/hero-2.jpg"
+    }
+  ],
+
+  "chinhsach":[
+    {
+      "title": "Miễn phí vẫn chuyển",
+      "des":"Cho đơn hàng từ 500K",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_1.png?1706431926539"
+    },
+    {
+      "title": "Đổi hàng tận nhà",
+      "des":"Trong vòng 7 ngày",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_2.png?1706431926539"
+    },
+    {
+      "title": "Thanh toán COD",
+      "des":"Hoặc thanh toán quét mã QR",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_3.png?1706431926539"
+    },
+    {
+      "title": "Hotline: 19000398",
+      "des":"Hỗ trợ từ 08h00 đến 22h00",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/chinhsach_4.png?1706431926539"
+    }
+  ],
+  "coupon":[
+    {
+      "title": "TẶNG BẠN MỚI",
+      "des":"Giảm 15% cho đơn hàng đầu tiên từ 699K",
+      "code":"HELLO",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_1.jpg?1706431926539"
+    },
+    {
+      "title": "MIỄN PHÍ VẬN CHUYỂN",
+      "des":"Khi mua hóa đơn từ 250K",
+      "code":"FREESHIP",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_2.jpg?1706431926539"
+    },
+    {
+      "title": "GIẢM 50K",
+      "des":"Khi mua hóa đơn từ 150K",
+      "code":"SUDES50K",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_3.jpg?1706431926539"
+    },
+    {
+      "title": "TẶNG VOUCHER 50%",
+      "des":"Khi mua từ 5 sản phẩm trở lên",
+      "code":"SUDES50",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/img_coupon_4.jpg?1706431926539"
+    }
+  ],
+  "categories": [
+    {
+      "title1": "Sản phẩm",
+      "title2": "Áo thời trang",
+      "link": "link1",
+      "bg_image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/background_danhmuc_1.jpg?1706431926539",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/danhmuc_1.jpg?1706431926539"
+    },
+    {
+      "title1": "Sản phẩm",
+      "title2": "Quần thời trang",
+      "link": "link2",
+      "bg_image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/background_danhmuc_2.jpg?1706431926539",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/danhmuc_2.jpg?1706431926539"
+    },
+    {
+      "title1": "Sản phẩm",
+      "title2": "Giày & Phụ Kiện",
+      "link": "link3",
+      "bg_image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/background_danhmuc_3.jpg?1706431926539",
+      "image": "https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/danhmuc_3.jpg?1706431926539"
+    }
+  ],
+
+  "products":[
+    {
+      "name": "Quần Short Jean Nam Trơn Form Straight Slim",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10f22dps001-cream-quan-short-nam-1.png?v=1692885690987",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"550.000",
+      "pricesale":"410.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Quần Short Nam Phối Dây Rút Họa Tiết In Form Relax",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23psh021-beige-blue-quan-shor.png?v=1692884786977",
+      "gender":"Nam",
+      "size":"Size S- Đủ size",
+      "price":"690.000",
+      "pricesale":"420.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Sơ Mi Nam Tay Dài Oxford Trơn Form Fitted",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/ao-so-mi-tay-dai-10f22shl002cr1.png?v=1692883505843",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"840.000",
+      "pricesale":"520.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Sơ Mi Nam Oxford Tay Dài Cổ Trụ Form Fitted",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10f22shl006cr1-black-iris-ao-so.png?v=1692883440627",
+      "gender":"Nam",
+      "size":"",
+      "price":"750.000",
+      "pricesale":"520.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Sơ Mi Nam Tay Dài Đũi Cổ Mao Kẻ Sọc Form Regular",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23shl015-bright-white-ao-so-m-2.png?v=1694012041930",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"",
+      "pricesale":"410.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Sơ Mi Nam Tay Dài Cổ V Túi Đắp Trơn Form Boxy",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23shl036-beige-1-1.png?v=1692629224440",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"550.000",
+      "pricesale":"410.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Thun Nam Tay Ngắn In Hình Form Regular",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/ao-thun-nam-10s23tss034-bright-w.png?v=1693028874207",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"690.000",
+      "pricesale":"530.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Sơ Mi Nam Tay Dài Kẻ Sọc Seesucker Form Loose",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23shl035-navy-white-ao-so-mi.png?v=1692629642783",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"670.000",
+      "pricesale":"510.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Quần Jean Nam Trơn Form Wide Leg",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/10s23dpa025-m-blue-quan-jean-nam-1-2.jpg?v=1692767005130",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"559.000",
+      "pricesale":"390.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Thun Nam Tay Ngắn In Chữ Dỗi Form Loose Nam",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/ao-thun-10s23tss069-black-1-2.png?v=1692881844157",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"580.000",
+      "pricesale":"330.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Thun Nam Tay Ngắn In Thân Sau Form Regular",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/ao-thun-nam-10f22tss014-white-al.png?v=1692881677533",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"322.000",
+      "pricesale":"600.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    },
+    {
+      "name": "Áo Thun Tay Ngắn Nam In Họa Tiết Form Fitted",
+      "image":"https://bizweb.dktcdn.net/thumb/large/100/491/897/products/ao-thun-nam-16-10f22tss008-brigh.png?v=1692882443213",
+      "gender":"Nam",
+      "size":"Size S- Freesize",
+      "price":"750.000",
+      "pricesale":"340.000",
+      "color1":"#000000",
+      "color2":"#ffffff"
+    }
+  ],
+  "news": [
+    {
+      "title":"Phối đồ với quần relax chuẩn men dành cho nam",
+      "content":"Tuy nhiên, form relax được biết đến là một form quần rộng rãi với phần ống rộng nên có rất nhiều chàng trai không biết phải phối đồ cùng form quần này như thế nào để không bị xuề xòa, luộm thuộm. Nhưng không cần lo lắng...",
+      "image":"https://bizweb.dktcdn.net/100/491/897/articles/phoi-do-voi-form-relax-chuan-men.png?v=1693032957567"
+    },
+    {
+      "title":"Gợi ý 5 kiểu quần kaki nữ trẻ trung được giới trẻ lăng xê",
+      "content":"uần kaki nữ là một trong những item thoải mái, năng động 'must have' trong tủ đồ các nàng, phù hợp với cả cô nàng công sở đến phong cách thời trang hằng ngày. Quần kaki không chỉ sở hữu thiết kế, form dáng đa dạng...",
+      "image":"https://bizweb.dktcdn.net/100/491/897/articles/quan-kaki-nu-thumb.png?v=1693032395680"
+    },
+    {
+      "title":"Sportswear là gì? Chất liệu làm nên những bộ sportswear cao cấp",
+      "content":"Nếu đã là một người đam mê thể thao, thích vận động chắc hẳn bạn sẽ không thể nào bỏ qua những trang phục thời trang phổ biến như sportswear. Sportswear luôn mang lại cho người mặc sự thoải mái...",
+      "image":"https://bizweb.dktcdn.net/100/491/897/articles/sportswear-la-gi-chat-lieu-lam-n.png?v=1693032295757"
+    }
+  ],
+  "diary":[
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_1.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_2.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_3.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_4.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_5.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_6.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_7.png?1706431926539"},
+    {"image":"https://bizweb.dktcdn.net/100/491/897/themes/915864/assets/image_ins_8.png?1706431926539"}
+  ]
+}
