@@ -47,14 +47,15 @@ const Category = {
 
   update: (data, id, mycallback) => {
     const sql = `UPDATE db_category SET ? WHERE id='${id}'`;
-    conn.query(sql, data, function (err, category) {
+    conn.query(sql, data, function (err, result) {
       if (err) {
         mycallback(null);
       } else {
-        mycallback(data);
+        mycallback(result, true);
       }
     });
   },
+  
 
   delete: async (req, res) => {
     try {
@@ -75,6 +76,7 @@ const Category = {
       };
       return res.status(200).json(result);
     }
-  },
+  }
+  
 }
 module.exports = Category;
